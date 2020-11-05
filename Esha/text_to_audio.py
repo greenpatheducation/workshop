@@ -20,3 +20,6 @@ print ('number of lines:', count_lines)
 input_file.close()
 
 print("for conflicts")
+print("for conflicts1")
+print("for conflicts2")
+print("for conflicts3")
