@@ -16,6 +16,7 @@ for line in input_file:
     if line == '\t' or line == '\n':
         break
     #file_input = input("Enter a file name  : ")
+    break if line == '\t' or line == '\n' else continue 
         count_lines += 1
         fname="ucharan_"+str(count_lines)+".mp3"
         myobj.save(fname)
