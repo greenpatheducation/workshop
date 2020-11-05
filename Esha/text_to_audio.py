@@ -15,7 +15,7 @@ for line in input_file:
         myobj.save(fname)
    # myobj.save("audio_file.mp3")
         os.system("mpg321 fname")    
-        
+    print(line)        
 print ('number of lines:', count_lines)
 input_file.close()
 

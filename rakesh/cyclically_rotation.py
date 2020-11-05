@@ -3,16 +3,18 @@
 def cyclically(lst,d,n):
 	c=len(lst)-d
 	lst1=[]
-	for i in range(0,c):
+	j=0
+	while j<c:
 		lst1.append(lst[i])
 	lst2 = [i for i in lst + lst1 if i not in lst or i not in lst1]
 	lst=lst2 + lst1
-	return lst
-	#print(lst)
+	print(lst)
+	j+=1
 
 lst=[]
 n=int(input("How many number:"))
 d=int(input("D="))
+print(n,d)
 for i in range(n):
 	ele=int(input())
 	lst.append(ele)
