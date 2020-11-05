@@ -8,7 +8,13 @@ for line in input_file:
     print (line)
     if line == '\t' or line == '\n':
         break
-    
+    #more changes
+    if line == '\t' or line == '\n':
+        break
+    if line == '\t' or line == '\n':
+        break
+    if line == '\t' or line == '\n':
+        break
     #file_input = input("Enter a file name  : ")
         count_lines += 1
         fname="ucharan_"+str(count_lines)+".mp3"
