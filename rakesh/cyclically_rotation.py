@@ -1,3 +1,5 @@
+#arr1[1,2,3,4,5]
+#o/p arr1[3,4,5,1,2]
 def cyclically(lst,d,n):
 	c=len(lst)-d
 	lst1=[]
@@ -17,3 +19,4 @@ for i in range(n):
 	ele=int(input())
 	lst.append(ele)
 cyclically(lst,d,n)
+print(lst)
