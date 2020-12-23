@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+  <body>
+    <form action="result2" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-span-group">
+        <br /><br /><br />
+        <span>Start Time : </span> &nbsp;&nbsp;
+        <input
+          id="h1"
+          name="start1"
+          style="width: 10ch"
+          placeholder="hh:mm:ss"
+          class="form-controll"
+        />&nbsp;&nbsp;&nbsp; <span>End Time : </span> &nbsp;&nbsp;
+        <input
+          id="h1"
+          name="end1"
+          style="width: 10ch"
+          placeholder="hh:mm:ss"
+          class="form-controll"
+        />&nbsp;&nbsp; <span>Span : </span> &nbsp;&nbsp;
+        <input
+          id="h1"
+          name="span1"
+          style="width: 10ch"
+          placeholder="Span"
+          class="form-controll"
+        />
+      </div>
+      <div class="form-span-group">
+        <div class="container2">
+          <button type="button" class="add_more_trim">Add</button
+          >&nbsp;&nbsp;&nbsp;
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
